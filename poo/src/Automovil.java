@@ -13,7 +13,7 @@ public class Automovil implements Comparable<Automovil>{
     private TipoAutomovil tipo;
 
     private static Color colorPatente = Color.NARANJO;
-    private static int capacidadEstanqueEstatico = 40;
+    private static int capacidadEstanqueEstatico = 30;
     private static int ultimoId;
 
     public static final Integer VELOCIDAD_MAX_CARRETERA = 120;
