@@ -1,2 +1,6 @@
 #Ignora carpeta out
 HolaMundo/out
+matrices/out
+poo/out
+poo/.idea
+poo/poo.iml
