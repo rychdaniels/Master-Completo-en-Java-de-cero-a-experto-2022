@@ -8,3 +8,9 @@ OrdenDeCompra/out/
 paquetes/out
 paquetes/paquetes.iml
 paquetes/.idea
+appfacturas/out
+appfacturas/appfacturas.iml
+appfacturas/.idea
+*/out
+*/.idea
+*/*.iml
