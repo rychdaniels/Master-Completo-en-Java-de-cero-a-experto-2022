@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Iniciar sesión</h1>
-<form action="/webapp-cookie/login" method="post">12345
+<form action="/webapp-session/login" method="post">
   <div>
     <label for="username">Username</label>
     <div>
