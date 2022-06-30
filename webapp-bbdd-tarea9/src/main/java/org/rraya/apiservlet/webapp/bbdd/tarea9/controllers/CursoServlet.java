@@ -11,27 +11,22 @@ import org.rraya.apiservlet.webapp.bbdd.tarea9.servicios.CursoServiceImpl;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet("/cursos/buscar")
-public class BuscarCursoServlet extends HttpServlet {
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Connection conn = (Connection) req.getAttribute("conn");
-        String nombreCurso = req.getParameter("nombre");
-        CursoService cursoService = new CursoServiceImpl(conn);
+@WebServlet("/cursos")
+public class CursoServlet extends HttpServlet {
 
-        List<Curso> cursos = null;
-        try {
-            cursos = cursoService.porNombre(nombreCurso);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Connection conn = (Connection) req.getAttribute("conn");
+
+        CursoService serviceCursos = new CursoServiceImpl(conn);
+        List<Curso> cursos = serviceCursos.listar();
 
         req.setAttribute("titulo", "Tarea 9: Listado de cursos");
         req.setAttribute("cursos", cursos);
-        getServletContext().getRequestDispatcher("/listar.jsp").forward(req,resp);
+        getServletContext().getRequestDispatcher("/listar.jsp").forward(req, resp);
+
 
     }
 }
