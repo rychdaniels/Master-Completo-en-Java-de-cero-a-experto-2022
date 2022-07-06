@@ -23,11 +23,9 @@ public class BuscarCursoServlet extends HttpServlet {
         CursoService cursoService = new CursoServiceImpl(conn);
 
         List<Curso> cursos = null;
-        try {
-            cursos = cursoService.porNombre(nombreCurso);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
+        cursos = cursoService.porNombre(nombreCurso);
+
 
         req.setAttribute("titulo", "Tarea 9: Listado de cursos");
         req.setAttribute("cursos", cursos);

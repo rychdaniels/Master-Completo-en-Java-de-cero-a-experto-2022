@@ -58,6 +58,48 @@ public class CursoRepositorioImpl implements Repositorio<Curso>{
         }
     }
 
+    @Override
+    public void guardarCurso(Curso curso) throws SQLException{
+
+        String query;
+
+        if(curso.getIdCurso() != null){
+            query = "UPDATE cursos set nombre = ?, descripcion = ?, instructor = ?, duracion = ? WHERE id = ?";
+        } else {
+            query = "INSERT INTO cursos (nombre, descripcion, instructor, duracion) VALUES (?,?,?,?)";
+        }
+        try(PreparedStatement stmt = conn.prepareStatement(query)){
+            stmt.setString(1, curso.getNombreCurso());
+            stmt.setString(2, curso.getDescripcionCurso());
+            stmt.setString(3, curso.getNombreInstructor());
+            stmt.setDouble(4, curso.getDuracion());
+
+            if(curso.getIdCurso() != null){
+                stmt.setDouble(5, curso.getIdCurso());
+            }
+
+            stmt.executeUpdate();
+        }
+    }
+
+
+    @Override
+    public Curso porId(Long id) throws SQLException {
+        Curso curso = null;
+        String query = "SELECT * FROM cursos WHERE id = ?";
+        try(PreparedStatement stmt = conn.prepareStatement(query)){
+            stmt.setLong(1, id);
+
+            try(ResultSet rs = stmt.executeQuery()){
+                if (rs.next()){
+                    curso = mapCurso(rs);
+                }
+            }
+        }
+
+        return curso;
+    }
+
     private Curso mapCurso(ResultSet rs) throws SQLException {
         Curso cursoMapeado = new Curso();
         cursoMapeado.setIdCurso(rs.getLong("id"));

@@ -35,7 +35,7 @@
             <th><%=curso.getNombreCurso()%></th>
             <th><%=curso.getNombreInstructor()%></th>
             <th><%=curso.getDuracion()%> hrs.</th>
-            <th><a href="/cursos/form?id=<%=curso.getIdCurso()%>">Editar</a></th>
+            <th><a href="<%=request.getContextPath()%>/cursos/form?id=<%=curso.getIdCurso()%>">Editar</a></th>
             <th><a onclick="return confirm('esta seguro que desea eliminar?');"
                    href="<%=request.getContextPath()%>/cursos/eliminar?id=<%=curso.getIdCurso()%>">Eliminar</a></th>
         </tr>
