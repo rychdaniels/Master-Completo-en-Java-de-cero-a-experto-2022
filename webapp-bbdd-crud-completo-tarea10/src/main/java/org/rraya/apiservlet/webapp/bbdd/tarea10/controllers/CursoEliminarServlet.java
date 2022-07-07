@@ -13,8 +13,8 @@ import java.sql.Connection;
 
 @WebServlet("/cursos/eliminar")
 public class CursoEliminarServlet extends HttpServlet {
-    //6	Microservicios con Spring Boot y Spring Cloud Netflix Eureka	Andres Guzman	19.55 hrs.
-    //7	Guía Completa JUnit y Mockito incluye Spring Boot Test	Andres Guzman	15.12 hrs.
+
+    //7		Andres Guzman	15.12 hrs.
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Connection conn = (Connection) req.getAttribute("conn");

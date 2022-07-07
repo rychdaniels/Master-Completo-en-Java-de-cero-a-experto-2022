@@ -79,7 +79,7 @@ public class CursoFormServlet extends HttpServlet {
             errores.put("descripcion", "La descripcion es obligatoria");
             logger.info("La descripcion es obligatoria");
         }
-        logger.info("La duración debe ser mayor a 0 -> " + duracion);
+
         if(duracion == 0){
             errores.put("duracionTiempo", "La duración debe ser mayor a 0");
             logger.info("La duración debe ser mayor a 0");
@@ -87,9 +87,17 @@ public class CursoFormServlet extends HttpServlet {
 
         Curso curso = new Curso();
 
-        curso.setNombreCurso(nombre);
-        curso.setDescripcionCurso(descripcion);
-        curso.setNombreInstructor(instructor);
+        Long id;
+        try {
+             id = Long.parseLong(req.getParameter("id"));
+        } catch (NumberFormatException nfe) {
+            logger.info("Ocurrió un error al convertir el id");
+            id = 0L;
+        }
+        curso.setIdCurso(id);
+        curso.setNombreCurso(nombre.trim());
+        curso.setDescripcionCurso(descripcion.trim());
+        curso.setNombreInstructor(instructor.trim());
         curso.setDuracion(duracion);
 
         if(errores.isEmpty()){
