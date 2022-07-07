@@ -14,7 +14,6 @@ import java.sql.Connection;
 @WebServlet("/cursos/eliminar")
 public class CursoEliminarServlet extends HttpServlet {
 
-    //7		Andres Guzman	15.12 hrs.
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Connection conn = (Connection) req.getAttribute("conn");
