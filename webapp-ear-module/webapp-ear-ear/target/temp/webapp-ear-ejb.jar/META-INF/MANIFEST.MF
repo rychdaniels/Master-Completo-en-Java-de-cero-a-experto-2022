@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Created-By: Maven EJB Plugin 3.2.1
+Build-Jdk-Spec: 16
+Class-Path: org.apache.maven.plugins-maven-ejb-plugin-3.2.1.jar org.apac
+ he.maven-maven-archiver-3.5.2.jar org.apache.maven-maven-artifact-3.1.1
+ .jar org.apache.maven-maven-model-3.1.1.jar org.apache.maven-maven-core
+ -3.1.1.jar org.apache.maven-maven-settings-builder-3.1.1.jar org.apache
+ .maven-maven-repository-metadata-3.1.1.jar org.apache.maven-maven-plugi
+ n-api-3.1.1.jar org.apache.maven-maven-model-builder-3.1.1.jar org.apac
+ he.maven-maven-aether-provider-3.1.1.jar org.eclipse.aether-aether-spi-
+ 0.9.0.M2.jar org.eclipse.aether-aether-impl-0.9.0.M2.jar org.eclipse.ae
+ ther-aether-api-0.9.0.M2.jar org.eclipse.aether-aether-util-0.9.0.M2.ja
+ r org.codehaus.plexus-plexus-classworlds-2.5.1.jar org.sonatype.plexus-
+ plexus-sec-dispatcher-1.3.jar org.sonatype.plexus-plexus-cipher-1.4.jar
+  org.apache.commons-commons-compress-1.20.jar org.codehaus.plexus-plexu
+ s-interpolation-1.26.jar org.apache.maven.shared-maven-filtering-3.2.0.
+ jar org.apache.maven-maven-settings-3.1.0.jar org.eclipse.sisu-org.ecli
+ pse.sisu.plexus-0.0.0.M2a.jar javax.enterprise-cdi-api-1.0.jar javax.an
+ notation-jsr250-api-1.0.jar javax.inject-javax.inject-1.jar com.google.
+ guava-guava-10.0.1.jar com.google.code.findbugs-jsr305-1.3.9.jar org.so
+ natype.sisu-sisu-guice-3.1.0-no_aop.jar aopalliance-aopalliance-1.0.jar
+  org.eclipse.sisu-org.eclipse.sisu.inject-0.0.0.M2a.jar asm-asm-3.3.1.j
+ ar org.codehaus.plexus-plexus-component-annotations-2.0.0.jar org.sonat
+ ype.plexus-plexus-build-api-0.0.7.jar org.apache.maven.shared-maven-sha
+ red-utils-3.3.4.jar org.codehaus.plexus-plexus-utils-3.3.1.jar org.code
+ haus.plexus-plexus-archiver-4.2.7.jar org.codehaus.plexus-plexus-io-3.2
+ .0.jar org.iq80.snappy-snappy-0.4.jar org.tukaani-xz-1.9.jar commons-io
+ -commons-io-2.6.jar
+

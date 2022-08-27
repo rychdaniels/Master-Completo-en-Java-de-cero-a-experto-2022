@@ -1,0 +1,6 @@
+/home/rychdaniels/Documentos/Java/Master-Completo-en-Java-de-cero-a-experto-2022/webapp-ear-module/webapp-ear-ejb/src/main/java/org/aguzman/webapp/ear/ejb/entities/Usuario.java
+/home/rychdaniels/Documentos/Java/Master-Completo-en-Java-de-cero-a-experto-2022/webapp-ear-module/webapp-ear-ejb/src/main/java/org/aguzman/webapp/ear/ejb/repositories/UsuarioRepositoryImpl.java
+/home/rychdaniels/Documentos/Java/Master-Completo-en-Java-de-cero-a-experto-2022/webapp-ear-module/webapp-ear-ejb/src/main/java/org/aguzman/webapp/ear/ejb/services/UsuarioServiceImpl.java
+/home/rychdaniels/Documentos/Java/Master-Completo-en-Java-de-cero-a-experto-2022/webapp-ear-module/webapp-ear-ejb/src/main/java/org/aguzman/webapp/ear/ejb/services/UsuarioService.java
+/home/rychdaniels/Documentos/Java/Master-Completo-en-Java-de-cero-a-experto-2022/webapp-ear-module/webapp-ear-ejb/src/main/java/org/aguzman/webapp/ear/ejb/repositories/UsuarioRepository.java
+/home/rychdaniels/Documentos/Java/Master-Completo-en-Java-de-cero-a-experto-2022/webapp-ear-module/webapp-ear-ejb/src/main/java/org/aguzman/webapp/ear/ejb/ProducerResources.java
